@@ -1,0 +1,80 @@
+<div class="menu">
+    <div style="margin-top: 10rem;">
+        <div style="color: yellow; margin-left: 15px;">OUR MENU <del style="color: white;">&emsp;&emsp;&emsp;</del></div>
+        <br>
+        <div style="font-size:50px;color: white;margin-left: 15px;margin-bottom:2rem;">Discover <br> Our menu</div>
+        <br>
+        <div class="nav-menu">
+            <script>
+                function displayMenu(i)
+                {
+                    let holder1 = document.getElementById('menu-img-f')
+                    let holder2 = document.getElementById('menu-img-s')
+                    if(i==0)
+                    {
+                        document.getElementById('buffet').style.fontWeight = "bold";
+                        document.getElementById('drink').style.fontWeight = "100";
+                        document.getElementById('cocktail').style.fontWeight = "100";
+                        document.getElementById('special-meat').style.fontWeight = "100";
+                        document.getElementById('rule').style.fontWeight = "100";
+                        holder1.innerHTML='<img width="100%" src="/public/img/Menu_Rule/Dinner buffet.jpg" alt="img">'
+                        holder2.innerHTML='<img width="100%" src="/public/img/Menu_Rule/Dinner buffet_2.jpg" alt="img">'
+                    }
+                    if(i==1)
+                    {
+                        document.getElementById('drink').style.fontWeight = "bold";
+                        document.getElementById('buffet').style.fontWeight = "100";                
+                        document.getElementById('cocktail').style.fontWeight = "100";
+                        document.getElementById('special-meat').style.fontWeight = "100";
+                        document.getElementById('rule').style.fontWeight = "100";
+                        holder1.innerHTML='<img width="100%" src="/public/img/Menu_Rule/drink.jpg" alt="img">'
+                        holder2.innerHTML='<img width="100%" src="/public/img/Menu_Rule/soju and beer.jpg" alt="img">'                        
+                    }
+                    if(i==2)
+                    {
+                        document.getElementById('cocktail').style.fontWeight = "bold";
+                        document.getElementById('buffet').style.fontWeight = "100";
+                        document.getElementById('drink').style.fontWeight = "100";
+                        document.getElementById('special-meat').style.fontWeight = "100";
+                        document.getElementById('rule').style.fontWeight = "100";
+                        holder1.innerHTML='<img width="100%" src="/public/img/Menu_Rule/soju and beer.jpg" alt="img">'
+                        holder2.innerHTML='<img width="100%" src="/public/img/Menu_Rule/cocktail.jpg" alt="img">'
+                    }
+                    if(i==3)
+                    {
+                        document.getElementById('special-meat').style.fontWeight = "bold";
+                        document.getElementById('buffet').style.fontWeight = "100";
+                        document.getElementById('drink').style.fontWeight = "100";
+                        document.getElementById('cocktail').style.fontWeight = "100";
+                        document.getElementById('rule').style.fontWeight = "100";
+                        holder1.innerHTML='<img width="100%" src="/public/img/Menu_Rule/Bros Speacial Meat.jpg" alt="img">>'
+                        holder2.innerHTML='<img width="100%" src="/public/img/Menu_Rule/Speacial buffet.jpg" alt="img">'
+                    }
+                    if(i==4)
+                    {
+                        document.getElementById('rule').style.fontWeight = "bold";
+                        document.getElementById('buffet').style.fontWeight = "100";
+                        document.getElementById('drink').style.fontWeight = "100";
+                        document.getElementById('cocktail').style.fontWeight = "100";
+                        document.getElementById('special-meat').style.fontWeight = "100";
+                        holder1.innerHTML='<img width="100%" src="/public/img/Menu_Rule/Rule.jpg" alt="img">'
+                        holder2.innerHTML='<span></span>'
+                    }
+                }
+            </script>
+            <div id="buffet" onclick="displayMenu(0)" style="font-weight:bold;">Buffet</div>
+            <div id="drink" onclick="displayMenu(1)">Dink</div>
+            <div id="cocktail" onclick="displayMenu(2)">Cocktails</div>
+            <div id="special-meat" onclick="displayMenu(3)">Special Meats</div>
+            <div id="rule" onclick="displayMenu(4)">Rule</div>
+            <element onclick="myScript"></element>
+        </div>
+        <div id="menu-img-f"><img width="100%" src="/public/img/Menu_Rule/Dinner buffet.jpg" alt="dinner-buffet"></div>
+    </div>
+    <div style="margin-top: 10rem;">
+        <div style="margin:3.5rem;font-size:20px;color:rgb(62, 60, 60);font-weight:bold;">There is a wide selection of choices served by top <br> BROS BBQ, prepared using best quality.</div>
+        <div id="menu-img-s" style="margin-top: 14.1rem;"><img width="100%" src="/public/img/Menu_Rule/Dinner buffet_2.jpg" alt=""></div>
+    </div>
+</div>
+<div class="show-more"> <a href="" style="text-decoration: none;color:white;">Show more</a></div>
+<br>
