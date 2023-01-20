@@ -8,4 +8,4 @@ router.get('/about' , aboutController.show);
 
 router.get('/', aboutController.index);
 
-module.exports = router;
+module.exports = router
